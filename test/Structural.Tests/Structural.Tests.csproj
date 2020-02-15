@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>DesignPatterns.Structural.Tests</AssemblyName>
+    <RootNamespace>DesignPatterns.Structural.Tests</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.8.0" />
+    <PackageReference Include="Moq" Version="4.12.0" />
+    <PackageReference Include="nunit" Version="3.12.0" />
+    <PackageReference Include="Xunit" Version="2.4.1" />
+    <PackageReference Include="Xunit.console" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Structural\Structural.csproj" />
+  </ItemGroup>
+
+</Project>

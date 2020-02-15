@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>DesignPatterns.Behavioral</AssemblyName>
+    <RootNamespace>DesignPatterns.Behavioral</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Observer\D_PubSub\**" />
+    <EmbeddedResource Remove="Observer\D_PubSub\**" />
+    <None Remove="Observer\D_PubSub\**" />
+  </ItemGroup>
+
+</Project>
