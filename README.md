@@ -2,6 +2,7 @@
 
 <b>This is a demo of design patterns implementation in C#.</b>
 
+[![Build Status](https://img.shields.io/appveyor/ci/thiagoloureiro/netcore-jwt-integrator-extension/master.svg)](https://ci.appveyor.com/project/mickaelseban/designpatterns)
 
 <b>What are Design Patterns?</b>
 
