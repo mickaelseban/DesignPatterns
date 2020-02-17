@@ -7,6 +7,13 @@
 
 ![](https://img.shields.io/appveyor/tests/mickaelseban/designpatterns)
 
+
+ [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=mickaelseban_DesignPatterns&metric=alert_status)](https://sonarcloud.io/dashboard?id=mickaelseban_DesignPatterns) 
+ [![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=mickaelseban_DesignPatterns&metric=coverage)](https://sonarcloud.io/component_measures/metric/coverage/list?id=mickaelseban_DesignPatterns)
+ [![SonarCloud Bugs](https://sonarcloud.io/api/project_badges/measure?project=mickaelseban_DesignPatterns&metric=bugs)](https://sonarcloud.io/component_measures/metric/reliability_rating/list?id=mickaelseban_DesignPatterns)
+ [![SonarCloud Vulnerabilities](https://sonarcloud.io/api/project_badges/measureproject=mickaelseban_DesignPatterns&metric=vulnerabilities)](https://sonarcloud.io/component_measures/metric/security_rating/list?id=mickaelseban_DesignPatterns)
+
+
 <b>What are Design Patterns?</b>
 
 Design patterns provide solutions to common software design problems. In the case of object-oriented programming, design patterns are generally aimed at solving the problems of object generation and interaction, rather than the larger scale problems of overall software architecture. They give generalised solutions in the form of templates that may be applied to real-world problems.
