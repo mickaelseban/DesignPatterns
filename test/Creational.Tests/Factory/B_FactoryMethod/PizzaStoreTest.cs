@@ -13,7 +13,7 @@
         public void ShouldCreatesASpecificInstance(IList<string> ingredients)
         {
             var sut = new NewYorkPizzaStore().OrderPizza(ingredients);
-            //safety cast
+
             Assert.NotNull(sut as NewYorkPizza);
         }
     }

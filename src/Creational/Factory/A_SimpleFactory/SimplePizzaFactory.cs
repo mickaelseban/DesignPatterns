@@ -3,7 +3,7 @@
     using DesignPatterns.Creational.Factory.Common.Pizza;
     using System.Collections.Generic;
 
-    public class SimplePizzaFactory
+    public static class SimplePizzaFactory
     {
         public static IPizza CreatePizza(PizzaType type, IList<string> ingredients)
         {

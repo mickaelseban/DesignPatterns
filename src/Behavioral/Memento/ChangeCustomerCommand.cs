@@ -8,21 +8,21 @@
 
         public ChangeCustomerCommand(Customer customer)
         {
-            Customer = customer;
+            this.Customer = customer;
         }
 
         public Customer Customer { get; private set; }
 
-        public void Execute(string newName)
+        public void Execute(string input)
         {
-            _mementos.Add(new MementoForCustomerEntity(Customer));
-            Customer.Name = newName;
+            this._mementos.Add(new MementoForCustomerEntity(this.Customer));
+            this.Customer.Name = input;
         }
 
         public void UnExecute()
         {
-            Customer = (_mementos[_mementos.Count - 1].GetCustomer());
-            _mementos.RemoveAt(_mementos.Count - 1);
+            this.Customer = (this._mementos[this._mementos.Count - 1].GetCustomer());
+            this._mementos.RemoveAt(this._mementos.Count - 1);
         }
     }
 }

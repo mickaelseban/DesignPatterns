@@ -2,7 +2,7 @@
 {
     public interface IDbCommand
     {
-        void Execute(string text);
+        void Execute(string input);
 
         void UnExecute();
     }

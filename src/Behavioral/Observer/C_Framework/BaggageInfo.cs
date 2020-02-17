@@ -4,9 +4,9 @@
     {
         public BaggageInfo(int flightNumber, string from, int carousel)
         {
-            FlightNumber = flightNumber;
-            From = from;
-            Carousel = carousel;
+            this.FlightNumber = flightNumber;
+            this.From = from;
+            this.Carousel = carousel;
         }
 
         public int Carousel { get; set; }

@@ -4,13 +4,13 @@
     using Xunit;
 
     [Collection("Behavioral.Tests")]
-    public class ChatroomMediatorTest
+    public class ChatRoomMediatorTest
     {
         [Fact]
-        public void ChatroomMediatorShouldReturn()
+        public void ChatRoomMediatorShouldReturn()
         {
             // Arrange
-            ChatroomMediator sut = new ChatroomMediator();
+            ChatRoomMediator sut = new ChatRoomMediator();
 
             Singer john = new Singer("john");
             Singer mike = new Singer("mike");

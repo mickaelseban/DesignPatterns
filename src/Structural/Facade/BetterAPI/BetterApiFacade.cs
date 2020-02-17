@@ -10,22 +10,28 @@
 
         public BetterApiFacade(IOverdone overdone, IConfusing confusing)
         {
-            _overdone = overdone;
-            _confusing = confusing;
+            this._overdone = overdone;
+            this._confusing = confusing;
         }
 
-        // public BetterApiFacade() : this(new Overdone("foo"), new Confusing()) { }
-
         int IBetterApiFacade.AddThenMultiply(int addend1, int factor)
-            => _overdone.DoSomething(addend1, factor);
+        {
+            return this._overdone.DoSomething(addend1, factor);
+        }
 
         int IBetterApiFacade.AddThenMultiply(int addend1, int addend2, int factor)
-            => _overdone.DoSomethingElse(addend1, addend2, factor);
+        {
+            return this._overdone.DoSomethingElse(addend1, addend2, factor);
+        }
 
         int IBetterApiFacade.AddThenMultiply(int addend1, int addend2, int addend3, int factor)
-            => _overdone.DoSomethingAgain(addend1, addend2, addend3, factor);
+        {
+            return this._overdone.DoSomethingAgain(addend1, addend2, addend3, factor);
+        }
 
         int IBetterApiFacade.AddThreeNumbers(int firstParam, int secondParam, int thirdParam)
-                                    => _confusing.Execute(firstParam, secondParam, thirdParam);
+        {
+            return this._confusing.Execute(firstParam, secondParam, thirdParam);
+        }
     }
 }

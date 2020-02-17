@@ -2,30 +2,23 @@
 {
     public class Participant
     {
-        private readonly string _name;
-        private ChatroomMediator _chatroomMediator;
-
         public Participant(string name)
         {
-            this._name = name;
+            this.Name = name;
         }
 
-        public ChatroomMediator Chatroom
-        {
-            set => _chatroomMediator = value;
-            get => _chatroomMediator;
-        }
+        public ChatRoomMediator ChatRoomMediator { get; set; }
 
-        public string Name => _name;
+        public string Name { get; }
 
         public virtual string Receive(string from, string message)
         {
-            return $"{from} to {Name}: '{message}'";
+            return $"{from} to {this.Name}: '{message}'";
         }
 
         public void Send(string to, string message)
         {
-            _chatroomMediator.Send(_name, to, message);
+            this.ChatRoomMediator.Send(this.Name, to, message);
         }
     }
 }

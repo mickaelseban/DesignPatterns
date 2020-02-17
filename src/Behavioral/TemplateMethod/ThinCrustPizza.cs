@@ -4,9 +4,9 @@
 
     public class ThinCrustPizza : IPizza
     {
-        public DoughTypeEnum Dough => DoughTypeEnum.Thin;
+        public DoughType Dough => DoughType.Thin;
         public string SauceType => string.Empty;
         public string Seasonings => string.Empty;
-        public IList<string> Toppings => null;
+        public IList<string> Toppings => new List<string>();
     }
 }

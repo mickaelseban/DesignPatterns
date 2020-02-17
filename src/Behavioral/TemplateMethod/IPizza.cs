@@ -4,7 +4,7 @@
 
     public interface IPizza
     {
-        DoughTypeEnum Dough { get; }
+        DoughType Dough { get; }
         string SauceType { get; }
         string Seasonings { get; }
         IList<string> Toppings { get; }

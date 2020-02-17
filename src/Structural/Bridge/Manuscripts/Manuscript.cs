@@ -4,11 +4,11 @@
 
     public abstract class Manuscript
     {
-        protected readonly IFormatter formatter;
+        protected readonly IFormatter _formatter;
 
-        public Manuscript(IFormatter formatter)
+        protected Manuscript(IFormatter formatter)
         {
-            this.formatter = formatter;
+            this._formatter = formatter;
         }
 
         public abstract string Print();

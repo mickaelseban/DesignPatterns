@@ -20,11 +20,11 @@
         public override string Print()
         {
             var sb = new StringBuilder();
-            sb.Append(formatter.Format("Title", Title));
+            sb.Append(this._formatter.Format("Title", Title));
             foreach (var question in Questions)
             {
-                sb.Append(formatter.Format("   Question", question.Key));
-                sb.Append(formatter.Format("   Answer", question.Value));
+                sb.Append(this._formatter.Format("   Question", question.Key));
+                sb.Append(this._formatter.Format("   Answer", question.Value));
             }
             return sb.ToString();
         }

@@ -4,24 +4,22 @@
 
     public sealed class NewYorkPizza : Pizza
     {
-        public NewYorkPizza(IList<string> ingredients) : base(ingredients)
+        public NewYorkPizza(IList<string> ingredients)
+            : base(ingredients)
         {
-            Dough = DoughType.Thin;
+            this.Dough = DoughType.Thin;
         }
 
         public override void Bake()
         {
-            //throw new System.NotImplementedException();
         }
 
         public override void Box()
         {
-            //throw new System.NotImplementedException();
         }
 
         public override void Cut()
         {
-            //throw new System.NotImplementedException();
         }
     }
 }

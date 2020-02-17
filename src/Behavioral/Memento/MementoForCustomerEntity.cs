@@ -2,13 +2,13 @@
 {
     public class MementoForCustomerEntity
     {
-        private Customer _customer;
+        private readonly Customer _customer;
 
         public MementoForCustomerEntity(Customer customer)
         {
-            _customer = customer.Clone();
+            this._customer = customer.Clone();
         }
 
-        public Customer GetCustomer() => _customer;
+        public Customer GetCustomer() => this._customer;
     }
 }

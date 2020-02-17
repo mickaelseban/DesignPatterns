@@ -3,12 +3,12 @@
     using System;
     using System.Collections.Generic;
 
-    internal class Unsubscriber<BaggageInfo> : IDisposable
+    internal class UnSubscriber<BaggageInfo> : IDisposable
     {
-        private IObserver<BaggageInfo> _observer;
-        private List<IObserver<BaggageInfo>> _observers;
+        private readonly IObserver<BaggageInfo> _observer;
+        private readonly List<IObserver<BaggageInfo>> _observers;
 
-        internal Unsubscriber(List<IObserver<BaggageInfo>> observers, IObserver<BaggageInfo> observer)
+        internal UnSubscriber(List<IObserver<BaggageInfo>> observers, IObserver<BaggageInfo> observer)
         {
             this._observers = observers;
             this._observer = observer;
@@ -16,8 +16,21 @@
 
         public void Dispose()
         {
-            if (_observers.Contains(_observer))
-                _observers.Remove(_observer);
+            this.Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            this.ReleaseUnmanagedResources();
+        }
+
+        private void ReleaseUnmanagedResources()
+        {
+            if (this._observers.Contains(this._observer))
+            {
+                this._observers.Remove(this._observer);
+            }
         }
     }
 }

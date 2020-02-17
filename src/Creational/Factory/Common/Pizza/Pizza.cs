@@ -4,9 +4,9 @@
 
     public abstract class Pizza : IPizza
     {
-        public Pizza(IList<string> ingredients)
+        protected Pizza(IList<string> ingredients)
         {
-            Toppings = ingredients;
+            this.Toppings = ingredients;
         }
 
         public DoughType Dough { get; set; }

@@ -20,9 +20,9 @@
         public override string Print()
         {
             var sb = new StringBuilder();
-            sb.Append(formatter.Format("Title", Title));
-            sb.Append(formatter.Format("Author", Author));
-            sb.Append(formatter.Format("Text", Text));
+            sb.Append(this._formatter.Format("Title", Title));
+            sb.Append(this._formatter.Format("Author", Author));
+            sb.Append(this._formatter.Format("Text", Text));
             return sb.ToString();
         }
     }

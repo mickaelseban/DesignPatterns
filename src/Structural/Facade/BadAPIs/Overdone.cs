@@ -6,10 +6,10 @@
     {
         public Overdone(string someString)
         {
-            SomeString = someString;
+            this.SomeString = someString ?? string.Empty;
         }
 
-        private string SomeString { get; } = string.Empty;
+        private string SomeString { get; }
 
         public int DoSomething(int a, int b) => a * b;
 

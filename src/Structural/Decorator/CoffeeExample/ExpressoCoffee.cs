@@ -15,12 +15,7 @@
             this.Ingredients.Add("foo");
         }
 
-        /// <summary>
-        /// Faking Di with concret class
-        /// </summary>
-        public ExpressoCoffee() : this(new Coffee()) { }
-
         public decimal Cost { get; set; }
-        public IList<string> Ingredients { get; set; } = new List<string>();
+        public IList<string> Ingredients { get; set; }
     }
 }
