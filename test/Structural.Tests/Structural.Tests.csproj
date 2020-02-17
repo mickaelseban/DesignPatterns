@@ -10,6 +10,10 @@
     <PackageReference Include="FluentAssertions" Version="5.8.0" />
     <PackageReference Include="Moq" Version="4.12.0" />
     <PackageReference Include="nunit" Version="3.12.0" />
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.3.0.14607">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Xunit" Version="2.4.1" />
     <PackageReference Include="Xunit.console" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">

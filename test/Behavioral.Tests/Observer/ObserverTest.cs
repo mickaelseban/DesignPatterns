@@ -30,7 +30,6 @@
             };
             subject.AddGameResult(gameResult);
             subject.UnregisterObserver(observer2);
-            //subject.UnregisterObserver(observer1);
             Assert.Single(subject.Observers);
         }
 
