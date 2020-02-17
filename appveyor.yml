@@ -11,7 +11,7 @@ dotnet_csproj:
 install:
   - sh: dotnet tool install --global dotnet-sonarscanner
 before_build:
-  - sh: dotnet sonarscanner begin /k:mickaelseban_DesignPatterns /v:$APPVEYOR_BUILD_VERSION /o:mickaelseban /d:sonar.host.url=https://sonarcloud.io /d:sonar.login=407a1c9b2661cfbdf789b17d1855f05048093fe7 /d:sonar.coverage.exclusions="tests/*Tests/**" /d:sonar.cs.opencover.reportsPaths="*.opencover.xml"
+  - sh: dotnet sonarscanner begin /k:mickaelseban_DesignPatterns /v:$APPVEYOR_BUILD_VERSION /o:mickaelseban /d:sonar.host.url=https://sonarcloud.io /d:sonar.login=407a1c9b2661cfbdf789b17d1855f05048093fe7 /d:sonar.cs.opencover.reportsPaths="*.opencover.xml"
 build_script:
   - sh: dotnet restore DesignPatterns-Demo.sln --no-cache
   - sh: dotnet build DesignPatterns-Demo.sln --no-restore
@@ -21,6 +21,3 @@ test_script:
   - sh: dotnet test test/Structural.Tests --no-build /p:CollectCoverage=true /p:CoverletOutputFormat="opencover" /p:CoverletOutput=../../tests-coverage
 after_test:
   - sh: dotnet sonarscanner end /d:sonar.login=407a1c9b2661cfbdf789b17d1855f05048093fe7
- artifacts:
-  - path: artifacts/*.nupkg
-    name: NuGet
