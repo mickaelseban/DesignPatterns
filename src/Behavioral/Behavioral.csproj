@@ -7,16 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Observer\D_PubSub\**" />
-    <EmbeddedResource Remove="Observer\D_PubSub\**" />
-    <None Remove="Observer\D_PubSub\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="SonarAnalyzer.CSharp" Version="8.3.0.14607">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-
 </Project>
