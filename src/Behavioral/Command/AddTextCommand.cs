@@ -2,10 +2,10 @@
 {
     public class AddTextCommand : CommandBase
     {
-        public override void Execute(string text)
+        public override void Execute(string value)
         {
-            base.Sb.Append(text);
-            base.Entries.Add(text);
+            base.Sb.Append(value);
+            base.Entries.Add(value);
         }
 
         public override void UnExecute()
