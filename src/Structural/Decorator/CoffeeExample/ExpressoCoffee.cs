@@ -5,13 +5,10 @@
 
     public class ExpressoCoffee : ICoffee
     {
-        private readonly ICoffee _coffeeDecorated;
-
         public ExpressoCoffee(ICoffee coffeeDecorated)
         {
-            this._coffeeDecorated = coffeeDecorated;
-            this.Cost = this._coffeeDecorated.Cost + 10;
-            this.Ingredients = this._coffeeDecorated.Ingredients.Select(x => x)?.ToList();
+            this.Cost = coffeeDecorated.Cost + 10;
+            this.Ingredients = coffeeDecorated.Ingredients.Select(x => x)?.ToList();
             this.Ingredients.Add("foo");
         }
 
