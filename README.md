@@ -2,6 +2,10 @@
 
 <b>This is a demo of design patterns implementation in C#.</b>
 
+[![Build Status](https://img.shields.io/appveyor/ci/mickaelseban/designpatterns/master.svg)](https://ci.appveyor.com/project/mickaelseban/designpatterns)
+
+
+![](https://img.shields.io/appveyor/tests/mickaelseban/designpatterns)
 
 <b>What are Design Patterns?</b>
 
