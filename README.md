@@ -23,4 +23,5 @@ The Gang of Four are the authors of the book, "Design Patterns: Elements of Reus
 
 # Contribuition
 https://refactoring.guru/design-patterns
+
 http://www.skimedic.com/blog/
