@@ -21,7 +21,7 @@ Design patterns are a powerful tool for software developers. However, they shoul
 The Gang of Four are the authors of the book, "Design Patterns: Elements of Reusable Object-Oriented Software". This important book describes various development techniques and pitfalls in addition to providing twenty-three object-oriented programming design patterns. The four authors were Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides.
 
 
-# Contribuition
+# Contribution
 https://refactoring.guru/design-patterns
 
 http://www.skimedic.com/blog/
